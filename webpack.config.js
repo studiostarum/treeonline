@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-    entry: './src/index.js',
+    entry: './src/main.js',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
@@ -32,4 +32,6 @@ module.exports = {
         allowedHosts: 'all',
         hot: true,
     },
+    stats: 'verbose',
+    devtool: 'source-map',
 };

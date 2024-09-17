@@ -6,7 +6,7 @@
 
   const scripts = document.getElementsByTagName('script');
   for (let script of scripts) {
-    if (script.src.includes('MAIN_SCRIPT_URL')) {
+    if (script.src.includes('main.js')) {
       script.src = mainScriptUrl;
       break;
     }
