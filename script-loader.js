@@ -1,0 +1,1 @@
+!function(){const t="localhost"===window.location.hostname||"127.0.0.1"===window.location.hostname?"http://localhost:9000/main.js":"https://studiostarum.github.io/treeonline/main.js",o=document.getElementsByTagName("script");for(let n of o)if(n.src.includes("main.js")){n.src=t;break}}();
