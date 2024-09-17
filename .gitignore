@@ -50,3 +50,6 @@ coverage/
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Webflow
+webflow.config.html
