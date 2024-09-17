@@ -63,7 +63,7 @@ function createMenuHandlers(navbar, navbarClone) {
         [navbar, navbarClone].forEach(nav => {
             const toggles = nav.querySelectorAll(".navbar-dropdown_toggle");
             const menus = nav.querySelectorAll(".navbar-dropdown_menu");
-            
+
             toggles.forEach(toggle => {
                 toggle.setAttribute("data-toggle", "closed");
                 const icon = toggle.querySelector(".menu-icon");
