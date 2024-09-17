@@ -25,9 +25,6 @@ jobs:
       - name: Build 🔧
         run: npm run build
 
-      - name: Copy script-loader to root 📁
-        run: cp dist/script-loader.js dist/
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
