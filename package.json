@@ -1,6 +1,7 @@
 {
   "name": "treeonline",
   "version": "1.0.0",
+  "homepage": "https://studiostarum.github.io/treeonline",
   "description": "",
   "main": "index.js",
   "scripts": {
