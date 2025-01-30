@@ -7,18 +7,21 @@ This project contains the implementation for the TreeOnline website.
 ```
 project-root/
 ├── src/
+│   ├── assets/
+│   │   └── icons/
+│   │       ├── ui/              # Interface elements
+│   │       └── services/        # Service-specific icons
 │   ├── js/
-│   │   ├── modules/
-│   │   └── main.js
+│   │   ├── components/         # Reusable UI components
+│   │   ├── modules/           # Feature-specific business logic
+│   │   └── main.js           # JavaScript entry point
 │   ├── styles/
-│   │   └── main.css
-│   └── index.html
-├── public/
-│   └── assets/
-├── dist/
-├── package.json
-├── vite.config.js
-└── README.md
+│   │   └── main.css          # Main stylesheet
+│   └── index.html            # Entry point HTML
+├── dist/                     # Build output
+├── package.json             # Project configuration
+├── vite.config.js          # Vite configuration
+└── README.md               # Project documentation
 ```
 
 ## Setup
@@ -46,5 +49,7 @@ npm run preview
 ## Features
 
 - Modern build setup with Vite
+- ES modules for better code organization
+- SVG icons with dynamic coloring using currentColor
 - Optimized for production
 - Development with hot module replacement 
