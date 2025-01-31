@@ -25,14 +25,4 @@ export const initSwiper = () => {
       prevEl: '.gallery20_arrow.swiper-button-prev',
     }
   });
-
-  // Add console logs for debugging
-  console.log('Swiper initialized:', {
-    slider1: aboutSlider1,
-    slider2: aboutSlider2,
-    slider1Elements: document.querySelectorAll('.about-us_slider .slider1.w-dyn-list').length,
-    slider2Elements: document.querySelectorAll('.about-us_slider .slider2.w-dyn-list').length,
-    navigationNext: document.querySelectorAll('.about-us_slider .gallery20_arrow.swiper-button-next').length,
-    navigationPrev: document.querySelectorAll('.about-us_slider .gallery20_arrow.swiper-button-prev').length
-  });
 }; 
