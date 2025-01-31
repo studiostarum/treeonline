@@ -12,7 +12,7 @@ import '../../css/modules/swiper.css';
 
 export const initSwiper = () => {
   // Initialize both sliders
-  const slider1 = new Swiper('.slider1', {
+  const slider1 = new Swiper('.swiper.slider1', {
     modules: [Navigation, Pagination, A11y],
     loop: true,
     slidesPerView: 1,
@@ -45,7 +45,7 @@ export const initSwiper = () => {
     }
   });
 
-  const slider2 = new Swiper('.slider2', {
+  const slider2 = new Swiper('.swiper.slider2', {
     modules: [Navigation, Pagination, A11y],
     loop: true,
     slidesPerView: 1,
