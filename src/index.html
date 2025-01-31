@@ -5,81 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TreeOnline</title>
-  <script type="module" src="./js/main.js"></script>
-  <style>
-    .w-dropdown-list.w--open,
-    .w-dropdown-list.w--nav-dropdown-list-open {
-      display: block;
-    }
-    .w-dropdown-list {
-      display: none;
-    }
-  </style>
 </head>
 
-<body class="p-4">
-  <!-- Rich Text Scroll Test -->
-  <div class="w-richtext mb-8">
-    <h2>Table of Contents</h2>
-    <ul>
-      <li><a href="#section1">Stap 1: First Section</a></li>
-      <li><a href="#section2">Stap 2: Second Section</a></li>
-      <li><a href="#section3">Stap 3: Third Section</a></li>
-    </ul>
-
-    <h2 id="section1">First Section</h2>
-    <p>Content for first section...</p>
-
-    <h2 id="section2">Second Section</h2>
-    <p>Content for second section...</p>
-
-    <h2 id="section3">Third Section</h2>
-    <p>Content for third section...</p>
+<body>
+  <div class="container">
+    <h1>TreeOnline</h1>
   </div>
-
-  <!-- Navbar Dropdown Test -->
-  <div class="w-dropdown mb-8">
-    <button class="w-dropdown-toggle">Toggle Dropdown</button>
-    <nav class="w-dropdown-list" id="dropdown1">
-      <button class="navbar-dropdown_link-back">Back</button>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-    </nav>
-  </div>
-
-  <!-- Copy to Clipboard Test -->
-  <div class="mb-8">
-    <button data-copy-to-clipboard="trigger">Copy Current URL</button>
-  </div>
-
-  <!-- Read Time Test -->
-  <div class="mb-8">
-    <div data-read-time="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <p>Read time: <span data-read-time="target"></span></p>
-  </div>
-
-  <!-- Case Randomizer Test -->
-  <div class="mb-8">
-    <div class="next-case_item">Case Study 1</div>
-    <div class="next-case_item">Case Study 2</div>
-    <div class="next-case_item">Case Study 3</div>
-  </div>
-
-  <!-- Dropdown Back Test -->
-  <div class="mb-8" data-menu="parent">
-    <button data-menu="trigger">Toggle Menu</button>
-    <div class="menu-content">Menu content here...</div>
-  </div>
-
-  <!-- Footer Year Test -->
-  <footer class="mt-8">
-    <p>Copyright © <span class="footer5_credit-year"></span> TreeOnline</p>
-  </footer>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

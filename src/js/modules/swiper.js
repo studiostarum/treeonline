@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, A11y, EffectFade } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,13 +18,13 @@ export const initSwiper = () => {
     slidesPerView: 1,
     spaceBetween: 32,
     speed: 800,
-    
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    
+
     // Responsive breakpoints
     breakpoints: {
       // Mobile
@@ -51,13 +51,13 @@ export const initSwiper = () => {
     slidesPerView: 1,
     spaceBetween: 32,
     speed: 800,
-    
+
     // Navigation arrows (using the same navigation as slider1)
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    
+
     // Responsive breakpoints
     breakpoints: {
       320: {
