@@ -10,28 +10,32 @@ export const initSwiper = () => {
     modules: [Navigation, Pagination, A11y],
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 32,
+    spaceBetween: 0,
     speed: 800,
+    wrapperClass: 'w-dyn-items',
+    slideClass: 'w-dyn-item',
     
     // Navigation arrows
     navigation: {
       nextEl: '.about-us_slider .gallery20_arrow.swiper-button-next',
       prevEl: '.about-us_slider .gallery20_arrow.swiper-button-prev',
-    },
+    }
   });
 
   const aboutSlider2 = new Swiper('.about-us_slider .slider2.w-dyn-list', {
     modules: [Navigation, Pagination, A11y],
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 32,
+    spaceBetween: 0,
     speed: 800,
+    wrapperClass: 'w-dyn-items',
+    slideClass: 'w-dyn-item',
     
     // Navigation arrows
     navigation: {
       nextEl: '.about-us_slider .gallery20_arrow.swiper-button-next',
       prevEl: '.about-us_slider .gallery20_arrow.swiper-button-prev',
-    },
+    }
   });
 
   // Add console logs for debugging
