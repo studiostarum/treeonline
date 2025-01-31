@@ -5,6 +5,10 @@ import { initReadTime } from './modules/readTime.js';
 import { initCaseRandomizer } from './modules/caseRandomizer.js';
 import { initDropdownBack } from './modules/dropdownBack.js';
 import { initFooterYear } from './modules/footerYear.js';
+import { initSwiper } from './modules/swiper.js';
+
+// Import CSS modules
+import '../css/modules/case-items.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize all modules
@@ -15,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCaseRandomizer();
   initDropdownBack();
   initFooterYear();
+  initSwiper();
 }); 
