@@ -18,22 +18,6 @@ export const initSwiper = () => {
       nextEl: '.about-us_slider .gallery20_arrow.swiper-button-next',
       prevEl: '.about-us_slider .gallery20_arrow.swiper-button-prev',
     },
-
-    // Responsive breakpoints
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 16
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 32
-      }
-    }
   });
 
   const aboutSlider2 = new Swiper('.about-us_slider .slider2.w-dyn-list', {
@@ -48,22 +32,6 @@ export const initSwiper = () => {
       nextEl: '.about-us_slider .gallery20_arrow.swiper-button-next',
       prevEl: '.about-us_slider .gallery20_arrow.swiper-button-prev',
     },
-
-    // Responsive breakpoints
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 16
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 32
-      }
-    }
   });
 
   // Add console logs for debugging
