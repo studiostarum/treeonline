@@ -6,14 +6,12 @@ import '../../css/modules/swiper.css';
 
 export const initSwiper = () => {
   // Initialize both sliders
-  const aboutSlider1 = new Swiper('.about-us_slider .slider1.w-dyn-list', {
+  const aboutSlider1 = new Swiper('.about-us_slider .slider1', {
     modules: [Navigation, Pagination, A11y],
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,
     speed: 800,
-    wrapperClass: 'w-dyn-items',
-    slideClass: 'w-dyn-item',
     
     // Navigation arrows
     navigation: {
@@ -22,14 +20,12 @@ export const initSwiper = () => {
     }
   });
 
-  const aboutSlider2 = new Swiper('.about-us_slider .slider2.w-dyn-list', {
+  const aboutSlider2 = new Swiper('.about-us_slider .slider2', {
     modules: [Navigation, Pagination, A11y],
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,
     speed: 800,
-    wrapperClass: 'w-dyn-items',
-    slideClass: 'w-dyn-item',
     
     // Navigation arrows
     navigation: {
@@ -42,8 +38,8 @@ export const initSwiper = () => {
   console.log('Swiper initialized:', {
     slider1: aboutSlider1,
     slider2: aboutSlider2,
-    slider1Elements: document.querySelectorAll('.about-us_slider .slider1.w-dyn-list').length,
-    slider2Elements: document.querySelectorAll('.about-us_slider .slider2.w-dyn-list').length,
+    slider1Elements: document.querySelectorAll('.about-us_slider .slider1').length,
+    slider2Elements: document.querySelectorAll('.about-us_slider .slider2').length,
     navigationNext: document.querySelectorAll('.about-us_slider .gallery20_arrow.swiper-button-next').length,
     navigationPrev: document.querySelectorAll('.about-us_slider .gallery20_arrow.swiper-button-prev').length
   });
