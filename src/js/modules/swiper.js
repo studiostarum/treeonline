@@ -1,57 +1,77 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y, EffectFade } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 // Import our custom Swiper styles
 import '../../css/modules/swiper.css';
 
 export const initSwiper = () => {
-  const swipers = document.querySelectorAll('.swiper');
-  
-  swipers.forEach(swiperElement => {
-    const swiper = new Swiper(swiperElement, {
-      modules: [Navigation, Pagination, A11y],
-      loop: true,
-      
-      // Better accessibility
-      a11y: {
-        prevSlideMessage: 'Previous slide',
-        nextSlideMessage: 'Next slide',
-        firstSlideMessage: 'This is the first slide',
-        lastSlideMessage: 'This is the last slide',
+  // Initialize both sliders
+  const slider1 = new Swiper('.slider1', {
+    modules: [Navigation, Pagination, A11y],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+    speed: 800,
+    
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // Responsive breakpoints
+    breakpoints: {
+      // Mobile
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16
       },
-      
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      // Tablet
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24
       },
-      
-      // Pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      
-      // Responsive breakpoints
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 40
-        }
+      // Desktop
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32
       }
-    });
+    }
+  });
+
+  const slider2 = new Swiper('.slider2', {
+    modules: [Navigation, Pagination, A11y],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+    speed: 800,
+    
+    // Navigation arrows (using the same navigation as slider1)
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // Responsive breakpoints
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32
+      }
+    }
   });
 }; 
