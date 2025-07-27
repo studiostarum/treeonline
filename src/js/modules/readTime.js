@@ -1,20 +1,22 @@
-const calculateReadTime = (text) => {
-  const wordsPerMinute = 200;
-  const words = text.trim().split(/\s+/).length;
-  return Math.ceil(words / wordsPerMinute);
-};
-
 export const initReadTime = () => {
-  const blogContent = document.querySelector('[data-read-time="content"]');
-  if (!blogContent) return;
+  const content = document.querySelector('#content');
 
-  const text = blogContent.textContent || '';
-  const readTime = calculateReadTime(text);
-  const readTimeTarget = document.querySelector('[data-read-time="target"]');
-  
-  if (readTimeTarget) {
-    const timeUnit = readTime === 1 ? 'minuut' : 'minuten';
-    readTimeTarget.textContent = `${readTime} ${timeUnit}`;
-    readTimeTarget.setAttribute('data-read-time', readTime.toString());
+  if (content) {
+    const text = content.textContent || content.innerText;
+    const words = text.split(' ');
+    const numWords = words.length;
+
+    // Words per minute
+    const readingSpeed = 250;
+    const readingTime = Math.ceil(numWords / readingSpeed);
+
+    const readingTimeElement = document.querySelector('#reading-time');
+    if (readingTimeElement) {
+      readingTimeElement.textContent = `${readingTime} ${readingTime === 1 ? 'minuut' : 'minuten'}`;
+    } else {
+      console.error("Element with ID 'reading-time' not found.");
+    }
+  } else {
+    console.error("Element with ID 'content' not found.");
   }
-}; 
+};
